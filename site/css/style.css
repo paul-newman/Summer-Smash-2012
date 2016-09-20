@@ -3,3 +3,14 @@ body {
 	font-size: 130%;
 }
 
+p { display: block; } strong { display: inline; }
+
+strong { display: block; }
+
+p {
+background-color: blue;
+}
+strong {
+display: block;
+background-color: red;
+}

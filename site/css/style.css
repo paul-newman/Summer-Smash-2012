@@ -34,6 +34,7 @@ quotes:none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
+content:";
 content:none;
 }
 a {
@@ -80,38 +81,15 @@ input, select {
 vertical-align:middle;
 }
 /* END RESET */
-
+/* Layout Block level elements */
 div#pagewrap {
 width: 80%;
 margin: 4em auto;
 font-family: Verdana, Arial, sans-serif;
 }
-
 header {
 padding: 1em 0 2em;
-background-color: #333;
 }
-
-header a {
-text-decoration: none;
-color: white;
-text-align: center;
-}
-
-header h1 {
-font-size: 3em;
-font-family: "Frijole", Arial, sans-serif;
-color: #eee;
-}
-
-header p {
-font-size: 1.2em;
-font-family: "Frijole", Arial, sans-serif;
-color: #ccc;
-margin: 0.7em 0 0 0;
-letter-spacing: 1px;
-}
-
 section#main {
 float: left;
 margin: 2em 2%;
@@ -121,11 +99,39 @@ width: 74%;
 float: left;
 padding: 0 1% 0 0;
 }
-
+aside {
+width: 21%;
+float: right;
+}
+footer {
+clear: both;
+padding: 2em 3%;
+}
+/* Header */
+header {
+background-color: #333;
+}
+header a {
+text-decoration: none;
+color: white;
+text-align: center;
+}
+header h1 {
+font-size: 3.5em;
+font-family: "Frijole", Arial, sans-serif;
+color: #eee;
+}
+header p {
+font-size: 1.2em;
+font-family: "Frijole", Arial, sans-serif;
+color: #ccc;
+margin: 0.7em 0 0 0;
+letter-spacing: 1px;
+}
+/* Form */
 fieldset {
 padding: 0.5em 1% 1em;
 }
-
 legend {
 text-transform: uppercase;
 font-size: 1.2em;
@@ -134,7 +140,6 @@ padding-bottom: 3px;
 border-bottom: 1px solid #333;
 width: 100%;
 }
-
 form ol, form ul {
 list-style-type: none;
 margin: 0 2%;
@@ -151,7 +156,6 @@ display: block;
 form ul li label {
 display: inline;
 }
-
 input[type="text"], input[type="number"], input[type="tel"], input[type="email"],
 input[type="date"] {
 width: 50%;
@@ -166,11 +170,9 @@ background-color: rgba(0,0,0,0.6);
 -o-border-radius: 4px;
 border-radius: 4px;
 }
-
 input[type="number"], input[type="date"] {
 width: 20%;
 }
-
 input[type="submit"] {
 background-color: rgba(0,0,0,0.6);
 color: #eee;
@@ -183,10 +185,8 @@ border: none;
 border-radius: 4px;
 margin-left: 2%;
 }
-
+/* Aside */
 aside {
-width: 21%;
-float: right;
 background-color: #ccc;
 padding: 1em 2%;
 -webkit-border-radius: 4px;
@@ -224,10 +224,8 @@ color: #c00;
 background-color: black;
 font-weight: bold;
 }
-
+/* Footer */
 footer {
-clear: both;
-padding: 2em 3%;
 border-top: 1px solid #666;
 color: #c00;
 font-family: Zapfino, Verdana, sans-serif;
